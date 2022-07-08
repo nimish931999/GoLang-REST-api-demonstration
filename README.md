@@ -1,10 +1,11 @@
 # GoLang-REST-api-demonstration #
 <br />
 It is a sample project showing the use of Go Lang in creating restfull apis.This project demonstrated all the operations performed during CRUD .We have taken a sample project of Movie listing and also we created a model instead of instantiating a database connection.
-</br>
+<br />
 
 **Port Used in all the api is 8000**
-
+<br /> **To run the app use the below command<br />
+go run api_model.go**<br />
 <br />Model of Movies that we have used<br />
 {MovieName:"Test",MovieRating:"5",MovieGenre:"testing"},<br />
 {MovieName:"Test2",MovieRating:"4",MovieGenre:"testing2"},<br />
