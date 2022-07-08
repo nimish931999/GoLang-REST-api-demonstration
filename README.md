@@ -18,12 +18,12 @@ API : http://localhost:8000/movie/createMovie
     "MovieGenre":"testing4"
 }
 
-To Update the rating of the movie on the basis of genre we will pass the name of the movie as a query parameter
-API :  http://localhost:8000/movie/updateMovie?movie_name=Test method=PUT
-{
-	"MovieName":"Test4",
-	"MovieRating":"3",
-	"MovieGenre":"testing4"
+To Update the rating of the movie on the basis of genre we will pass the name of the movie as a query parameter \n
+API :  http://localhost:8000/movie/updateMovie?movie_name=Test method=PUT \n
+{\n
+	"MovieName":"Test4",\n
+	"MovieRating":"3",\n
+	"MovieGenre":"testing4"\n
 }
 
 To perform the deletion successfully we will be requiring the movie name as the deletion is being performed on the basis of Movie Name
