@@ -1,42 +1,41 @@
-
-Description
+Description<br />
 It is a sample project showing the use of Go Lang in creating restfull apis.This project demonstrated all the operations performed during CRUD .We have taken a sample project of Movie listing and also we created a model instead of instantiating a database connection.
 
-Model of Movies that we have used
-{MovieName:"Test",MovieRating:"5",MovieGenre:"testing"},
-{MovieName:"Test2",MovieRating:"4",MovieGenre:"testing2"},
-{MovieName:"Test3",MovieRating:"3",MovieGenre:"testing3"}
-
-To read all the movies from the model
-API : http://localhost:8000/movie
-
-To create a new Movie object. This movie object is needded to be inserted in the body and needed to be sent with API
-API : http://localhost:8000/movie/createMovie
-{
-    "MovieName":"Test4",
-    "MovieRating":"2",
-    "MovieGenre":"testing4"
-}
-
-To Update the rating of the movie on the basis of genre we will pass the name of the movie as a query parameter \n
-API :  http://localhost:8000/movie/updateMovie?movie_name=Test method=PUT \n
-{\n
-	"MovieName":"Test4",\n
-	"MovieRating":"3",\n
-	"MovieGenre":"testing4"\n
-}
-
-To perform the deletion successfully we will be requiring the movie name as the deletion is being performed on the basis of Movie Name
-API : http://localhost:8000/movie/deleteMovie?movie_name=Test2
-
-All the Endpoints are listed below
- All the api endpoints require postman  
- http://localhost:8000/movie   method=GET
- http://localhost:8000/movie/createMovie{it will require postman} method=POST
- http://localhost:8000/movie/updateMovie?movie_name=Test method=PUT
- http://localhost:8000/movie/deleteMovie?movie_name=Test2 method=DELETE
- 
- //These two are Filter endpoints 
- http://localhost:8000/movie/filter/genre?genre=testing method=GET
- http://localhost:8000/movie/filter/rating/2 method=GET
+<br />Model of Movies that we have used<br />
+{MovieName:"Test",MovieRating:"5",MovieGenre:"testing"},<br />
+{MovieName:"Test2",MovieRating:"4",MovieGenre:"testing2"},<br />
+{MovieName:"Test3",MovieRating:"3",MovieGenre:"testing3"}<br />
+<br />
+To read all the movies from the model<br />
+API : http://localhost:8000/movie<br />
+<br />
+To create a new Movie object. This movie object is needded to be inserted in the body and needed to be sent with API<br />
+API : http://localhost:8000/movie/createMovie<br />
+{<br />
+    "MovieName":"Test4",<br />
+    "MovieRating":"2",<br />
+    "MovieGenre":"testing4"<br />
+}<br />
+<br />
+To Update the rating of the movie on the basis of genre we will pass the name of the movie as a query parameter <br />
+API :  http://localhost:8000/movie/updateMovie?movie_name=Test method=PUT <br />
+{<br />
+	"MovieName":"Test4",<br />
+	"MovieRating":"3",<br />
+	"MovieGenre":"testing4"<br />
+}<br />
+<br />
+To perform the deletion successfully we will be requiring the movie name as the deletion is being performed on the basis of Movie Name<br />
+API : http://localhost:8000/movie/deleteMovie?movie_name=Test2<br />
+<br />
+All the Endpoints are listed below<br />
+ <br />All the api endpoints require postman  
+ <br />http://localhost:8000/movie   method=GET
+ <br />http://localhost:8000/movie/createMovie{it will require postman} method=POST
+ <br />http://localhost:8000/movie/updateMovie?movie_name=Test method=PUT
+ <br />http://localhost:8000/movie/deleteMovie?movie_name=Test2 method=DELETE
+ <br />
+ <br />//These two are Filter endpoints 
+ <br />http://localhost:8000/movie/filter/genre?genre=testing method=GET
+ <br />http://localhost:8000/movie/filter/rating/2 method=GET
 
